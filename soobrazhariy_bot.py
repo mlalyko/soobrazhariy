@@ -195,7 +195,7 @@ def main():
     )
     bot = Bot(
         request=req,
-        token='1082088112:AAGGzo8SCHoa5fzRwVnzm7fG-d_SPpwKiTo',
+        token='token',
         base_url='https://telegg.ru/orig/bot',
     )
     updater = Updater(
