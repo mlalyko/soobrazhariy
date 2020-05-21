@@ -3,6 +3,7 @@ from telegram import Update, Bot, ReplyKeyboardMarkup, ReplyKeyboardRemove, Keyb
     InlineKeyboardButton
 from telegram.ext import CallbackContext, Updater, Filters, MessageHandler, CommandHandler, ConversationHandler, \
     CallbackQueryHandler
+from soobrazhariy.config import TG_TOKEN
 import random, time
 
 
@@ -195,7 +196,7 @@ def main():
     )
     bot = Bot(
         request=req,
-        token='token',
+        token=TG_TOKEN,
         base_url='https://telegg.ru/orig/bot',
     )
     updater = Updater(
